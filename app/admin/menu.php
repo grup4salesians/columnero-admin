@@ -16,3 +16,9 @@
  */
 
 Admin::menu()->url('/')->label('Start page')->icon('fa-dashboard')->uses('\SleepingOwl\Admin\Controllers\DummyController@getIndex');
+Admin::menu()->label('Manteniment Taules')->icon('fa-book')->items(function (){
+
+	Admin::menu('\Categorie');
+
+
+});
